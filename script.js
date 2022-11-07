@@ -11,7 +11,7 @@ let app = new PIXI.Application({
 document.getElementById("game").appendChild(app.view)
 
 for (let i = 0; i < wall_amount; i++) {
-    let wall = new PIXI.Sprite.from(PIXI.Texture.WHITE);
+    let wall = new PIXI.Sprite(PIXI.Texture.WHITE);
     wall.width = 50;
     wall.height = 50;
     wall.tint = 0xffffff;
@@ -156,7 +156,7 @@ function interpret(equation, x) {
 }
 
 function draw(x, y) {
-    let func_dot = new PIXI.Sprite.from(PIXI.Texture.WHITE);
+    let func_dot = new PIXI.Sprite(PIXI.Texture.WHITE);
     func_dot.width = 1;
     func_dot.height = 1;
     func_dot.tint = 0xffffff
